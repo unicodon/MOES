@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="vmd2moa">
+      <UniqueIdentifier>{08D1676C-CBA8-323D-3B39-557529A359A8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="vmd2moa\vmd2moa.cpp">
+      <Filter>vmd2moa</Filter>
+    </ClCompile>
+    <None Include="converter.gyp"/>
+  </ItemGroup>
+</Project>
