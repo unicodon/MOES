@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="moesapp">
+      <UniqueIdentifier>{7D94DCA3-EDEB-D6E5-36D0-520157C8E275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="moesapp">
+      <UniqueIdentifier>{7D94DCA3-EDEB-D6E5-36D0-520157C8E275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="moesapp\win">
+      <UniqueIdentifier>{47FC5EC4-15EB-E92F-89D7-AFE51CF838A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="moesapp">
+      <UniqueIdentifier>{7D94DCA3-EDEB-D6E5-36D0-520157C8E275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="moesapp\win">
+      <UniqueIdentifier>{47FC5EC4-15EB-E92F-89D7-AFE51CF838A9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="moesapp\JAFAppMain.cpp">
+      <Filter>moesapp</Filter>
+    </ClCompile>
+    <ClCompile Include="moesapp\win\PlatformExtensions.cpp">
+      <Filter>moesapp\win</Filter>
+    </ClCompile>
+    <ClInclude Include="moesapp\win\PlatformExtensions.h">
+      <Filter>moesapp\win</Filter>
+    </ClInclude>
+    <None Include="moes.gyp"/>
+  </ItemGroup>
+</Project>

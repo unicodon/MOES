@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FDC2B674-488C-40FE-A2C8-72DEC22F8F89}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MOES</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  <ImportGroup Label="ExtensionSettings"/>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+    <Import Project="win.props"/>
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+    <Import Project="win.props"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\.\bin\;$(MSBuildProjectDirectory)\.\bin\</ExecutablePath>
+    <IntDir>$(SolutionDir)/../build/Intermediate/$(Configuration)/$(ProjectName)/</IntDir>
+    <OutDir>$(SolutionDir)\..\build\$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)lib\$(ProjectName)$(TargetExt)</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>MOES\include;MOES\src;MOES\src\Common;JAF\include\JAF;MOEGUL\include;$(SolutionDir)\..\format;$(SolutionDir)\..\third_party\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DEBUG;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>MOES\include;MOES\src;MOES\src\Common;JAF\include\JAF;MOEGUL\include;$(SolutionDir)\..\format;$(SolutionDir)\..\third_party\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;_DEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>MOES\include;MOES\src;MOES\src\Common;JAF\include\JAF;MOEGUL\include;$(SolutionDir)\..\format;$(SolutionDir)\..\third_party\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>MOES\include;MOES\src;MOES\src\Common;JAF\include\JAF;MOEGUL\include;$(SolutionDir)\..\format;$(SolutionDir)\..\third_party\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="moes.gyp"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MOES\include\MOES\Forward.h"/>
+    <ClInclude Include="MOES\include\MOES\Model.h"/>
+    <ClInclude Include="MOES\src\debug.h"/>
+    <ClInclude Include="MOES\src\Common\Dictionary.h"/>
+    <ClInclude Include="MOES\src\Model\ModelRenderer.h"/>
+    <ClInclude Include="MOES\src\Model\ModelPrivate.h"/>
+    <ClInclude Include="MOES\src\ModelData\Bone.h"/>
+    <ClInclude Include="MOES\src\ModelData\Material.h"/>
+    <ClInclude Include="MOES\src\ModelData\Mesh.h"/>
+    <ClInclude Include="MOES\src\ModelData\ModelData.h"/>
+    <ClInclude Include="MOES\src\ModelData\Morph.h"/>
+    <ClInclude Include="MOES\src\ModelData\Vertex.h"/>
+    <ClInclude Include="MOES\src\MotionData\BoneAnimator.h"/>
+    <ClInclude Include="MOES\src\MotionData\MotionData.h"/>
+    <ClInclude Include="MOES\src\MotionData\VertexMorphAnimator.h"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MOES\src\Model\ModelRenderer.cpp"/>
+    <ClCompile Include="MOES\src\Model\Model.cpp"/>
+    <ClCompile Include="MOES\src\ModelData\ModelData.cpp"/>
+    <ClCompile Include="MOES\src\MotionData\BoneAnimator.cpp"/>
+    <ClCompile Include="MOES\src\MotionData\MotionData.cpp"/>
+    <ClCompile Include="MOES\src\MotionData\VertexMorphAnimator.cpp"/>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+</Project>

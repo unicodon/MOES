@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D58C8313-3228-4EB0-9954-DE1946718D52}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MOEGUL</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Label="Configuration">
+    <CharacterSet>Unicode</CharacterSet>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  <ImportGroup Label="ExtensionSettings"/>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+    <Import Project="win.props"/>
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+    <Import Project="win.props"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\.\bin\;$(MSBuildProjectDirectory)\.\bin\</ExecutablePath>
+    <IntDir>$(SolutionDir)/../build/Intermediate/$(Configuration)/$(ProjectName)/</IntDir>
+    <OutDir>$(SolutionDir)\..\build\$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)lib\$(ProjectName)$(TargetExt)</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>MOEGUL\include;MOEGUL\src;JAF\include\JAF;$(SolutionDir)\..\third_party\$(OES_LIB_NAME)\include;$(SolutionDir)\..\third_party\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>DEBUG;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>MOEGUL\include;MOEGUL\src;JAF\include\JAF;$(SolutionDir)\..\third_party\$(OES_LIB_NAME)\include;$(SolutionDir)\..\third_party\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;_DEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>MOEGUL\include;MOEGUL\src;JAF\include\JAF;$(SolutionDir)\..\third_party\$(OES_LIB_NAME)\include;$(SolutionDir)\..\third_party\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)lib\$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>MOEGUL\include;MOEGUL\src;JAF\include\JAF;$(SolutionDir)\..\third_party\$(OES_LIB_NAME)\include;$(SolutionDir)\..\third_party\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="moes.gyp"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MOEGUL\include\MOEGUL\Camera.h"/>
+    <ClInclude Include="MOEGUL\include\MOEGUL\EGL.h"/>
+    <ClInclude Include="MOEGUL\include\MOEGUL\GL.h"/>
+    <ClInclude Include="MOEGUL\include\MOEGUL\GLTypes.h"/>
+    <ClInclude Include="MOEGUL\include\MOEGUL\GLUtil.h"/>
+    <ClInclude Include="MOEGUL\include\MOEGUL\PresetShaders.h"/>
+    <ClInclude Include="MOEGUL\include\MOEGUL\Primitives.h"/>
+    <ClInclude Include="MOEGUL\src\debug.h"/>
+    <ClInclude Include="MOEGUL\src\EGL\EGLPrivate.h"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MOEGUL\src\EGL\EGL.cpp"/>
+    <ClCompile Include="MOEGUL\src\EGL\EGL_win.cpp"/>
+    <ClCompile Include="MOEGUL\src\GL\GL.cpp"/>
+    <ClCompile Include="MOEGUL\src\GL\GLUtil.cpp"/>
+    <ClCompile Include="MOEGUL\src\Graphics\Camera.cpp"/>
+    <ClCompile Include="MOEGUL\src\Graphics\PresetShaders.cpp"/>
+    <ClCompile Include="MOEGUL\src\Graphics\Primitives.cpp"/>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+</Project>
