@@ -90,6 +90,7 @@ namespace
 		APIEntry<PFNGLUNIFORMMATRIX4FVPROC> m_uniformMatrix4fv;
 		APIEntry<PFNGLUSEPROGRAMPROC> m_useProgram;
 		APIEntry<PFNGLVERTEXATTRIBPOINTERPROC> m_vertexAttribPointer;
+		APIEntry<PFNGLVIEWPORTPROC> m_viewport;
 
 		APITable()
 			: m_attachShader("glAttachShader")
@@ -152,6 +153,7 @@ namespace
 			, m_uniformMatrix4fv("glUniformMatrix4fv")
 			, m_useProgram("glUseProgram")
 			, m_vertexAttribPointer("glVertexAttribPointer")
+			, m_viewport("glViewport")
 		{
 		}
 	};
@@ -508,6 +510,14 @@ namespace MOEGUL
 	{
 		if (HAS_API(vertexAttribPointer)) {
 			CALL_API(vertexAttribPointer, idx, size, type, normalized, stride, offset);
+			SHOW_GL_ERROR();
+		}
+	}
+
+	void GL::viewport(int32_t x, int32_t y, int32_t width, int32_t height)
+	{
+		if (HAS_API(viewport)) {
+			CALL_API(viewport, x, y, width, height);
 			SHOW_GL_ERROR();
 		}
 	}

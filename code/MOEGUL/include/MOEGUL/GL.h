@@ -158,6 +158,7 @@ namespace MOEGUL
 		void		texParameteriv(uint32_t target, uint32_t pname, const int32_t* params);
 		void		useProgram(Program);
 		void		vertexAttribPointer(uint32_t idx, int32_t size, uint32_t type, bool normalized, int32_t stride, void* offset);
+		void		viewport(int32_t x, int32_t y, int32_t width, int32_t height);
 
 		//-------------------------------------
 		// GL API (uniform)
