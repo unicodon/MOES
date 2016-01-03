@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\include">
+      <UniqueIdentifier>{57CA55B8-BCC5-4000-CE3A-58972F82E9CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\include\MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\include">
+      <UniqueIdentifier>{57CA55B8-BCC5-4000-CE3A-58972F82E9CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\include\MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\Common">
+      <UniqueIdentifier>{F86A273C-85A3-22AB-C7FA-A36F586D586C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\Model">
+      <UniqueIdentifier>{5764BBE8-9810-C936-7091-F3D6B8DAB598}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\Model">
+      <UniqueIdentifier>{5764BBE8-9810-C936-7091-F3D6B8DAB598}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\Model">
+      <UniqueIdentifier>{5764BBE8-9810-C936-7091-F3D6B8DAB598}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\Model">
+      <UniqueIdentifier>{5764BBE8-9810-C936-7091-F3D6B8DAB598}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\ModelData">
+      <UniqueIdentifier>{2F3E6B5A-BE41-2263-2EB7-987254E7A4C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\ModelData">
+      <UniqueIdentifier>{2F3E6B5A-BE41-2263-2EB7-987254E7A4C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\ModelData">
+      <UniqueIdentifier>{2F3E6B5A-BE41-2263-2EB7-987254E7A4C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\ModelData">
+      <UniqueIdentifier>{2F3E6B5A-BE41-2263-2EB7-987254E7A4C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\ModelData">
+      <UniqueIdentifier>{2F3E6B5A-BE41-2263-2EB7-987254E7A4C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\ModelData">
+      <UniqueIdentifier>{2F3E6B5A-BE41-2263-2EB7-987254E7A4C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\ModelData">
+      <UniqueIdentifier>{2F3E6B5A-BE41-2263-2EB7-987254E7A4C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\MotionData">
+      <UniqueIdentifier>{93E55A14-0368-B6A8-5626-E540AC2D3E94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\MotionData">
+      <UniqueIdentifier>{93E55A14-0368-B6A8-5626-E540AC2D3E94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\MotionData">
+      <UniqueIdentifier>{93E55A14-0368-B6A8-5626-E540AC2D3E94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\MotionData">
+      <UniqueIdentifier>{93E55A14-0368-B6A8-5626-E540AC2D3E94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\MotionData">
+      <UniqueIdentifier>{93E55A14-0368-B6A8-5626-E540AC2D3E94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES">
+      <UniqueIdentifier>{220986AF-67B3-DFD3-4FD9-99582985F2F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MOES\src\MotionData">
+      <UniqueIdentifier>{93E55A14-0368-B6A8-5626-E540AC2D3E94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MOES\include\MOES\Forward.h">
+      <Filter>MOES\include\MOES</Filter>
+    </ClInclude>
+    <ClInclude Include="MOES\include\MOES\Model.h">
+      <Filter>MOES\include\MOES</Filter>
+    </ClInclude>
+    <ClInclude Include="MOES\src\debug.h">
+      <Filter>MOES\src</Filter>
+    </ClInclude>
+    <ClInclude Include="MOES\src\Common\Dictionary.h">
+      <Filter>MOES\src\Common</Filter>
+    </ClInclude>
+    <ClCompile Include="MOES\src\Model\ModelRenderer.cpp">
+      <Filter>MOES\src\Model</Filter>
+    </ClCompile>
+    <ClInclude Include="MOES\src\Model\ModelRenderer.h">
+      <Filter>MOES\src\Model</Filter>
+    </ClInclude>
+    <ClCompile Include="MOES\src\Model\Model.cpp">
+      <Filter>MOES\src\Model</Filter>
+    </ClCompile>
+    <ClInclude Include="MOES\src\Model\ModelPrivate.h">
+      <Filter>MOES\src\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="MOES\src\ModelData\Bone.h">
+      <Filter>MOES\src\ModelData</Filter>
+    </ClInclude>
+    <ClInclude Include="MOES\src\ModelData\Material.h">
+      <Filter>MOES\src\ModelData</Filter>
+    </ClInclude>
+    <ClInclude Include="MOES\src\ModelData\Mesh.h">
+      <Filter>MOES\src\ModelData</Filter>
+    </ClInclude>
+    <ClCompile Include="MOES\src\ModelData\ModelData.cpp">
+      <Filter>MOES\src\ModelData</Filter>
+    </ClCompile>
+    <ClInclude Include="MOES\src\ModelData\ModelData.h">
+      <Filter>MOES\src\ModelData</Filter>
+    </ClInclude>
+    <ClInclude Include="MOES\src\ModelData\Morph.h">
+      <Filter>MOES\src\ModelData</Filter>
+    </ClInclude>
+    <ClInclude Include="MOES\src\ModelData\Vertex.h">
+      <Filter>MOES\src\ModelData</Filter>
+    </ClInclude>
+    <ClCompile Include="MOES\src\MotionData\BoneAnimator.cpp">
+      <Filter>MOES\src\MotionData</Filter>
+    </ClCompile>
+    <ClInclude Include="MOES\src\MotionData\BoneAnimator.h">
+      <Filter>MOES\src\MotionData</Filter>
+    </ClInclude>
+    <ClCompile Include="MOES\src\MotionData\MotionData.cpp">
+      <Filter>MOES\src\MotionData</Filter>
+    </ClCompile>
+    <ClInclude Include="MOES\src\MotionData\MotionData.h">
+      <Filter>MOES\src\MotionData</Filter>
+    </ClInclude>
+    <ClCompile Include="MOES\src\MotionData\VertexMorphAnimator.cpp">
+      <Filter>MOES\src\MotionData</Filter>
+    </ClCompile>
+    <ClInclude Include="MOES\src\MotionData\VertexMorphAnimator.h">
+      <Filter>MOES\src\MotionData</Filter>
+    </ClInclude>
+    <None Include="moes.gyp"/>
+  </ItemGroup>
+</Project>

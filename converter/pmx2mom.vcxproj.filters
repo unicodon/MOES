@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="pmx2mom">
+      <UniqueIdentifier>{27D1CB12-82AE-B5B9-7FFB-72839AD8220A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pmx2mom\pmx2mom.cpp">
+      <Filter>pmx2mom</Filter>
+    </ClCompile>
+    <None Include="converter.gyp"/>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,41 @@
+{
+  'targets' : [
+    {
+      'target_name': 'MOES',
+      'msvs_guid': 'FDC2B674-488C-40FE-A2C8-72DEC22F8F89',
+      'type': 'static_library',
+      'include_dirs' : [
+        'include',
+        'src',
+        'src/Common',
+        '../JAF/include/JAF',
+        '../MOEGUL/include',
+        '$(SolutionDir)/../format',
+        '$(SolutionDir)/../third_party/glm/',
+      ],
+      'sources' : [
+        'include/MOES/Forward.h',
+        'include/MOES/Model.h',
+        'src/debug.h',
+        'src/Common/Dictionary.h',
+        'src/Model/ModelRenderer.cpp',
+        'src/Model/ModelRenderer.h',
+        'src/Model/Model.cpp',
+        'src/Model/ModelPrivate.h',
+        'src/ModelData/Bone.h',
+        'src/ModelData/Material.h',
+        'src/ModelData/Mesh.h',
+        'src/ModelData/ModelData.cpp',
+        'src/ModelData/ModelData.h',
+        'src/ModelData/Morph.h',
+        'src/ModelData/Vertex.h',
+        'src/MotionData/BoneAnimator.cpp',
+        'src/MotionData/BoneAnimator.h',
+        'src/MotionData/MotionData.cpp',
+        'src/MotionData/MotionData.h',
+        'src/MotionData/VertexMorphAnimator.cpp',
+        'src/MotionData/VertexMorphAnimator.h',
+      ],
+    }
+  ],
+}

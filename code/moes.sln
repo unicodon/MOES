@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 13.00
+# Visual Studio 2013
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JAF", "JAF.vcxproj", "{367818CD-AADC-4C44-8F27-85DF602212B2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MOEGUL", "MOEGUL.vcxproj", "{D58C8313-3228-4EB0-9954-DE1946718D52}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MOES", "MOES.vcxproj", "{FDC2B674-488C-40FE-A2C8-72DEC22F8F89}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "moesapp", "moesapp.vcxproj", "{29412EB8-2475-4427-978A-6F93D46EF0EE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{367818CD-AADC-4C44-8F27-85DF602212B2} = {367818CD-AADC-4C44-8F27-85DF602212B2}
+		{D58C8313-3228-4EB0-9954-DE1946718D52} = {D58C8313-3228-4EB0-9954-DE1946718D52}
+		{FDC2B674-488C-40FE-A2C8-72DEC22F8F89} = {FDC2B674-488C-40FE-A2C8-72DEC22F8F89}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29412EB8-2475-4427-978A-6F93D46EF0EE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{29412EB8-2475-4427-978A-6F93D46EF0EE}.Debug|Win32.Build.0 = Debug|Win32
+		{29412EB8-2475-4427-978A-6F93D46EF0EE}.Release|Win32.ActiveCfg = Release|Win32
+		{29412EB8-2475-4427-978A-6F93D46EF0EE}.Release|Win32.Build.0 = Release|Win32
+		{367818CD-AADC-4C44-8F27-85DF602212B2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{367818CD-AADC-4C44-8F27-85DF602212B2}.Debug|Win32.Build.0 = Debug|Win32
+		{367818CD-AADC-4C44-8F27-85DF602212B2}.Release|Win32.ActiveCfg = Release|Win32
+		{367818CD-AADC-4C44-8F27-85DF602212B2}.Release|Win32.Build.0 = Release|Win32
+		{D58C8313-3228-4EB0-9954-DE1946718D52}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D58C8313-3228-4EB0-9954-DE1946718D52}.Debug|Win32.Build.0 = Debug|Win32
+		{D58C8313-3228-4EB0-9954-DE1946718D52}.Release|Win32.ActiveCfg = Release|Win32
+		{D58C8313-3228-4EB0-9954-DE1946718D52}.Release|Win32.Build.0 = Release|Win32
+		{FDC2B674-488C-40FE-A2C8-72DEC22F8F89}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FDC2B674-488C-40FE-A2C8-72DEC22F8F89}.Debug|Win32.Build.0 = Debug|Win32
+		{FDC2B674-488C-40FE-A2C8-72DEC22F8F89}.Release|Win32.ActiveCfg = Release|Win32
+		{FDC2B674-488C-40FE-A2C8-72DEC22F8F89}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
